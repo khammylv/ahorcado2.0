@@ -10,7 +10,7 @@ function validar() {
       
    
     } else {
-      alert("No es una letra")
+     // alert("No es una letra")
     }
 
 
