@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo2.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="container navega">
+                <div class="logo">
+                    <img src="/img/logo.png" alt="">
+                </div>
+                <div class="enlaces">
+                    <a href="index.html"class="b1" >Pagina Inicio</a> 
+                    <button class="b2" onclick="reiniciarJ()">Volver a jugar</button>
+                    <button class="b3" onclick="mostrar()">Agregar Palabra</button>
+
+
+                </div>
+            </section>
+
+        </nav>
+    </header>
+    <main>
+        <section class="ocultar" id="ocultar">
+            <section class="agregoLetra container">
+                <textarea name="" id="agre" cols="30" rows="10" class="txt" required>
+
+                </textarea>
+
+                <button onclick="validar()" type="submit" class="btn">Agregar palabra</button>
+            </section>
+        </section>
+
+        <section class="area">
+            <div class="canva" id="canva">
+                <canvas id="lienzo" width="1080" height="600" class="dibu"></canvas>
+                <textarea name="" id="teclad" cols="30" rows="10" onkeydown="teclado(event)" class="escribir"  placeholder="Escribe las letras aquí">
+                </textarea>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-con">
+            <a href="https://github.com/khammylv" target="_blank" class="social-media-icon">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maria-camila-leal-vasquez-614365204/" target="_blank"
+                class="social-media-icon">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="mailto:khammylv@gmail.com" class="social-media-icon">
+                <i class='bx bx-mail-send'></i>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="index1.js"></script>
+    <script src="index2.js"></script>
+    <script src="index3.js"></script>
+</body>
+
+</html>
